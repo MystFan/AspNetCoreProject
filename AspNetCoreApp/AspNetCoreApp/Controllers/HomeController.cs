@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using AspNetCoreApp.Data;
+using AspNetCoreApp.DomainObjects;
+using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,6 +10,10 @@ namespace AspNetCoreApp.Controllers
 {
     public class HomeController : Controller
     {
+        public HomeController(IRepository<Cat> cats)
+        {
+        }
+
         public ViewResult Index()
         {
             return View();

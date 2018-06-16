@@ -10,4 +10,8 @@
     <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="2.1.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\AspNetCoreApp.DomainObjects\AspNetCoreApp.DomainObjects.csproj" />
+  </ItemGroup>
+
 </Project>

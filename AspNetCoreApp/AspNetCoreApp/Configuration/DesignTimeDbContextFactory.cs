@@ -1,11 +1,11 @@
-﻿using AspNetCoreApp.Data;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Design;
-using Microsoft.Extensions.Configuration;
-using System.IO;
-
-namespace AspNetCoreApp.Configuration
+﻿namespace AspNetCoreApp.Configuration
 {
+    using AspNetCoreApp.Data;
+    using Microsoft.EntityFrameworkCore;
+    using Microsoft.EntityFrameworkCore.Design;
+    using Microsoft.Extensions.Configuration;
+    using System.IO;
+
     public class DesignTimeDbContextFactory : IDesignTimeDbContextFactory<ApplicationDbContext>
     {
         public ApplicationDbContext CreateDbContext(string[] args)

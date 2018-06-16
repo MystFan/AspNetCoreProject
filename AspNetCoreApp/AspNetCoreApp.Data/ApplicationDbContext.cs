@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using AspNetCoreApp.DomainObjects;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -11,5 +12,7 @@ namespace AspNetCoreApp.Data
             : base(options)
         {
         }
+
+        public DbSet<Cat> Cats { get; set; }
     }
 }
