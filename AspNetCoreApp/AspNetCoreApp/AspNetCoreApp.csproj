@@ -20,4 +20,8 @@
     <ProjectReference Include="..\AspNetCoreApp.TagHelpers\AspNetCoreApp.TagHelpers.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="wwwroot\libs\" />
+  </ItemGroup>
+
 </Project>
