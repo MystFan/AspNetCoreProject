@@ -1,8 +1,8 @@
-﻿using Microsoft.EntityFrameworkCore.Metadata;
-using Microsoft.EntityFrameworkCore.Migrations;
-
-namespace AspNetCoreApp.Data.Migrations
+﻿namespace AspNetCoreApp.Data.Migrations
 {
+    using Microsoft.EntityFrameworkCore.Metadata;
+    using Microsoft.EntityFrameworkCore.Migrations;
+
     public partial class Initial : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -12,7 +12,8 @@ namespace AspNetCoreApp.Data.Migrations
                 columns: table => new
                 {
                     Id = table.Column<int>(nullable: false)
-                        .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn)
+                        .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
+                    Name = table.Column<string>(nullable: true)
                 },
                 constraints: table =>
                 {

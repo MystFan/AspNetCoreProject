@@ -1,1 +1,12 @@
-﻿<h1>Home Page</h1>
+﻿@model CatListViewModel
+
+<h1>Home Page</h1>
+
+<ul>
+    @foreach (var cat in Model.Cats)
+    {
+        <li>@cat.Name</li>
+    }
+</ul>
+
+<div page-model="@Model.PagingInfo" page-action="Index"></div>

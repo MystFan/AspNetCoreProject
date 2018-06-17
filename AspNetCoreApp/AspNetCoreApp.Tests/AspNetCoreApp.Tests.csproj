@@ -5,8 +5,18 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.TagHelpers" Version="2.1.0" />
+    <PackageReference Include="Moq" Version="4.8.3" />
     <PackageReference Include="xunit" Version="2.3.1" />
     <PackageReference Include="xunit.runner.visualstudio" Version="2.3.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AspNetCoreApp.Data\AspNetCoreApp.Data.csproj" />
+    <ProjectReference Include="..\AspNetCoreApp.DomainObjects\AspNetCoreApp.DomainObjects.csproj" />
+    <ProjectReference Include="..\AspNetCoreApp.Models\AspNetCoreApp.Models.csproj" />
+    <ProjectReference Include="..\AspNetCoreApp.TagHelpers\AspNetCoreApp.TagHelpers.csproj" />
+    <ProjectReference Include="..\AspNetCoreApp\AspNetCoreApp.csproj" />
   </ItemGroup>
 
 </Project>

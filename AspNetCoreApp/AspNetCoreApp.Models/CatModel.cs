@@ -1,6 +1,6 @@
-﻿namespace AspNetCoreApp.DomainObjects
+﻿namespace AspNetCoreApp.Models
 {
-    public class Cat
+    public class CatModel
     {
         public int Id { get; set; }
 
